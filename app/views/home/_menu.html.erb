@@ -12,7 +12,27 @@
 		  				<i class="ellipsis vertical icon"></i> MENU
 						</button>
         </li>
+        <li>
+          	<button class="ui right labeled icon tiny menu-button button" id="login_button"> 
+		  				<i class="user vertical icon"></i> LOGIN
+						</button>
+        </li>
 			</ul>
 		</nav> 
 	</div>
 </header>
+<!-- modal -->
+<div class="ui modal small" id="login_modal">
+  <div class="header" style="text-align: center">
+		<h3>Login</h3>
+  </div>
+  <div class="content">
+    <%= render('users/login_form') %>
+  </div>
+  <div class="actions">
+  </div>
+</div>
+
+<script>
+	initLoginModal();
+</script>

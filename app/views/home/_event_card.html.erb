@@ -1,0 +1,25 @@
+ <% @events.each do |event| %>
+	<div class="column">
+		<div class="ui card">
+		  <div class="image">
+		     <%= image_tag ('event-stack.gif') %>
+		  </div>
+		  <div class="content">
+		    <div class="header"><%= event.name %></div>
+		    <div class="description">
+		      <%= event.description.truncate(80) %>
+		    </div>
+		  </div>
+		  <div class="ui two bottom attached buttons">
+		    <div class="ui button">
+		      <i class="angle double right icon"></i>
+		      Details
+		    </div>
+		    <a href="<%= event.id %>" class="ui teal button">
+		    	<i class="ticket icon"></i>
+		      	Get Ticket
+		    </a>
+		  </div>
+		</div>
+	</div>
+ <% end %>

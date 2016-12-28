@@ -1,1 +1,20 @@
-<h1>Blah</h1>
+<div class="ui three column stackable grid">
+	<div class="row">
+		<div class="eight wide column">
+			<h2><i class="circular inverted orange calendar icon"></i>Upcoming Events</h2>	
+		</div>
+	</div>
+	<div class="row">
+		<%= render ('home/event_card') %>
+	</div>
+	<div class="row centered">
+		<%= image_tag 'seperator.png' %>
+	</div>
+	<div class="row centered">
+		<%= link_to events_path do %>
+			<button class="ui button">
+				Browse All Events
+			</button>
+		<% end %>
+	</div>
+</div>
